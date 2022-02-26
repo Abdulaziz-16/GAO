@@ -1,0 +1,39 @@
+// Container
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  padding: 0 $containerSitePadding+px;
+  margin: 0 auto;
+  @media (min-width: $breakpoint1400) {
+    max-width: 1100px;
+  }
+  @media (min-width: $breakpoint992) {
+    max-width: 970px;
+  }
+  @media (min-width: $breakpoint768) {
+    max-width: 750px;
+  }
+  @media (min-width: $breakpoint480) {
+    max-width: none;
+  }
+}
+
+// Body
+body {
+  font-family: $fontMain;
+  font-size: 400;
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+// Animations
+// Fade
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
