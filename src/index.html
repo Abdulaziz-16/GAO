@@ -2,12 +2,31 @@
 <html lang="en">
   @@include('./html/head.html', { title: 'Главная'})
   <body>
-    @@include('./html/header.html', {})
+    <header class="header">
+      <div class="header__item image__item">
+      </div>
+      <div class="header__item info__item">
+        <a href="" class="logo">
+          <img src="@img/icons/icons.svg#logo" alt="logo">
+          <h3 class="section__title">Create Account</h3>
+          <p class="section__text">Please register your account!</p>
+          <a href="" class="btn">
+            Create Account
+            <img src="@img/icons/icons.svg#arrow-right" alt="">
+          </a>
+          
+          <div class="link">
+            Already have an account?
+            <a href="#">Sign in</a>
+          </div>
+        </a>
+      </div>
+    </header>
     <main>
       
     </main>
-    @@include('./html/footer.html', {})
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="js/app.min.js"></script>
   </body>
 </html>
